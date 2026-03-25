@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poly-Graph AI</title>
+  <style>
+    :root {
+      --fg: #1a1a1a;
+      --fg-secondary: #555;
+      --accent: #2a5ada;
+      --bg: #fafafa;
+      --border: #e0e0e0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 580px;
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--fg);
+      margin-bottom: 2.5rem;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+    }
+
+    .tagline {
+      font-size: 1.05rem;
+      color: var(--fg-secondary);
+      margin-bottom: 2rem;
+      max-width: 480px;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: var(--accent);
+      margin-bottom: 2rem;
+    }
+
+    .focus-areas {
+      margin-bottom: 2.5rem;
+    }
+
+    .focus-areas h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--fg-secondary);
+      margin-bottom: 0.8rem;
+    }
+
+    .focus-areas ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .focus-areas li {
+      padding: 0.4rem 0;
+      font-size: 0.95rem;
+      color: var(--fg);
+    }
+
+    .focus-areas li::before {
+      content: '\2014';
+      margin-right: 0.6rem;
+      color: var(--accent);
+    }
+
+    .recent-work {
+      border-top: 1px solid var(--border);
+      padding-top: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .recent-work h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--fg-secondary);
+      margin-bottom: 0.6rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      font-size: 0.9rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+    }
+
+    .contact a {
+      font-size: 0.95rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      body { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Poly<span>-</span>Graph</div>
+
+    <h1>Teaching AI to think, not just speak.</h1>
+
+    <p class="tagline">
+      The vast majority of language data that LLMs train on was written
+      to communicate &mdash; almost by definition, since someone wrote it
+      to be read. But humans also use language for internal thinking:
+      the silent work of solving problems, learning which reasoning
+      patterns lead to solutions and which lead to dead ends.
+    </p>
+
+    <p class="tagline">
+      We work on the delicate task of generating that missing corpus
+      of internal thinking &mdash; and training models with it beyond
+      the boundaries of conventional verification. From enabling
+      models to detect their own contradictory beliefs, to generating
+      original scientific hypotheses, to domains where quality has
+      traditionally been difficult to validate: original ideas in
+      story writing, humor, and beyond.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="focus-areas">
+      <h2>Focus Areas</h2>
+      <ul>
+        <li>Synthetic reasoning data for LLM self-correction</li>
+        <li>Original hypothesis generation in scientific domains</li>
+        <li>Quality evaluation in traditionally subjective domains</li>
+      </ul>
+    </div>
+
+    <div class="recent-work">
+      <h2>Recent Work</h2>
+      <div class="links">
+        <a href="https://organic-intelligence-1976.github.io/synthetic-scientist/paper.pdf">Our recent paper: <em>Synthetic Scientist</em></a>
+      </div>
+    </div>
+
+    <div class="contact">
+      <a href="mailto:info@poly-graph.ai">info@poly-graph.ai</a>
+    </div>
+  </div>
+</body>
+</html>
