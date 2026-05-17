@@ -4,6 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poly-Graph AI</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Poly-Graph AI",
+    "url": "https://poly-graph.ai",
+    "email": "info@poly-graph.ai",
+    "founder": {
+      "@type": "Person",
+      "name": "Reza Jamei",
+      "email": "reza.jamei@poly-graph.ai"
+    }
+  }
+  </script>
   <style>
     :root {
       --fg: #1a1a1a;
@@ -145,6 +159,18 @@
       text-decoration: underline;
     }
 
+    .contact-secondary {
+      font-size: 0.8rem;
+      color: var(--fg-secondary);
+      margin-top: 0.5rem;
+    }
+
+    .contact-secondary a {
+      color: var(--fg-secondary);
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+
     @media (max-width: 480px) {
       h1 { font-size: 1.5rem; }
       body { padding: 1.5rem; }
@@ -195,6 +221,7 @@
 
     <div class="contact">
       <a href="mailto:info@poly-graph.ai">info@poly-graph.ai</a>
+      <p class="contact-secondary">Founder: <a href="mailto:reza.jamei@poly-graph.ai">Reza Jamei</a></p>
     </div>
   </div>
 </body>
