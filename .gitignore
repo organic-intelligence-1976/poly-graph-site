@@ -1,0 +1,8 @@
+# Internal workspace notes — never publish
+CLAUDE.md
+message_board.md
+
+# Secrets / local
+.env
+*.env
+.DS_Store
